@@ -9,10 +9,10 @@ A = np.array([[0, 0], [0.5, math.sqrt(3) / 2], [1, 0]])
 # of the triangle
 
 # Plotting the initial triangle
-plt.scatter(A[:, 0], A[:, 1], s=0.3, c="red")
+plt.scatter(A[:, 0], A[:, 1], s=0.5, c="red")
 
 # Initial triangle coordinates A of equilateral Triangle
-def initial_triangle():
+def initial_points():
     return A
 
 # Affine transformation functions
@@ -57,5 +57,5 @@ def contraction_mapping(A):
     A = np.concatenate((A1, A2, A3), axis=0)
 
     # plotting the points
-    plt.scatter(A[:, 0], A[:, 1], s=0.3, c="red")
+    plt.scatter(A[:, 0], A[:, 1], s=0.5, c="red")
     return A
