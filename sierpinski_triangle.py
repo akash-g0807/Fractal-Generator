@@ -47,7 +47,6 @@ f = [f1, f2, f3]
 def contraction_mapping(A):
     # Applying affine transformation f1 to all points of A
     A1 = f1(A)
-    print(A1)
     # Applying affine transformation f2 to all points of A
     A2 = f2(A)
     # Applying affine transformation f3 to all points of A

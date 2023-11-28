@@ -38,33 +38,38 @@ n = int(input("Enter the number of iterations: "))
 # Iterating the contraction mapping function n times
 
 ##### Derministic method #####
-#A = fractal.initial_points()
-#total_points = np.array(A)
 
-# append initial points to the total set
+# input file does not have the string chaos in it
+if "chaos" not in file_name:
+    A = fractal.initial_points()
+    total_points = np.array(A)
 
-#for i in range(n):
-#    A = fractal.contraction_mapping(A)
-#    total_points = np.concatenate((total_points, A), axis=0)
+    #append initial points to the total set
+
+    for i in range(n):
+        A = fractal.contraction_mapping(A)
+        total_points = np.concatenate((total_points, A), axis=0)
 
 
-#plt.scatter(total_points[:, 0], total_points[:, 1], s=0.5, c="red")
+        plt.scatter(total_points[:, 0], total_points[:, 1], s=0.5, c="red")
 ##### Derministic method #####
 
 
 ##### Chaos game method #####
 
-x, y = fractal.initial_points()
+# input file has the string chaos in it
+if "chaos" in file_name:
+    x, y = fractal.initial_points()
 
-total_set_x = []
-total_set_y = []
+    total_set_x = []
+    total_set_y = []
 
-for i in range(n):
-    x, y = fractal.chaos_game(x, y, fractal.p)
-    total_set_x.append(x)
-    total_set_y.append(y)
+    for i in range(n):
+        x, y = fractal.chaos_game(x, y, fractal.p)
+        total_set_x.append(x)
+        total_set_y.append(y)
 
-plt.scatter(total_set_x, total_set_y, s=0.5, c="red")
+    plt.scatter(total_set_x, total_set_y, s=0.5, c="red")
 ##### Chaos game method #####
 
 

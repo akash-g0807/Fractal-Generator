@@ -15,6 +15,7 @@ plt.scatter(A[:, 0], A[:, 1], s=0.5, c="green")
 def initial_points():
     return A
 
+
 # Affine transformation functions
 #
 def f1(A):
