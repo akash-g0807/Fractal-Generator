@@ -1,12 +1,10 @@
-
 import matplotlib.pyplot as plt
 import numpy as np
 
 import math
 import importlib
-# Sierpinski Triangle using deterministic method usinf affine transformations
-# input the file name
 
+# input the file name
 print("------------------------------------")
 print("Welcome to the fractal generator")
 print("The following are the diagrams available:")
@@ -38,25 +36,22 @@ n = int(input("Enter the number of iterations: "))
 # Iterating the contraction mapping function n times
 
 ##### Derministic method #####
-
 # input file does not have the string chaos in it
 if "chaos" not in file_name:
     A = fractal.initial_points()
     total_points = np.array(A)
 
-    #append initial points to the total set
+    # append initial points to the total set
 
     for i in range(n):
         A = fractal.contraction_mapping(A)
         total_points = np.concatenate((total_points, A), axis=0)
 
-
-        plt.scatter(total_points[:, 0], total_points[:, 1], s=0.5, c="red")
+    plt.scatter(total_points[:, 0], total_points[:, 1], s=0.5, c="red")
 ##### Derministic method #####
 
 
 ##### Chaos game method #####
-
 # input file has the string chaos in it
 if "chaos" in file_name:
     x, y = fractal.initial_points()

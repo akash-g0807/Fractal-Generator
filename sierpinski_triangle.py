@@ -11,9 +11,11 @@ A = np.array([[0, 0], [0.5, math.sqrt(3) / 2], [1, 0]])
 # Plotting the initial triangle
 plt.scatter(A[:, 0], A[:, 1], s=0.5, c="red")
 
+
 # Initial triangle coordinates A of equilateral Triangle
 def initial_points():
     return A
+
 
 # Affine transformation functions
 def f1(A):
@@ -40,9 +42,9 @@ def f3(A):
     return A3
 
 
-
 # Array of functions
 f = [f1, f2, f3]
+
 
 def contraction_mapping(A):
     # Applying affine transformation f1 to all points of A
