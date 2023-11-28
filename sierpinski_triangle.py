@@ -55,7 +55,4 @@ def contraction_mapping(A):
 
     # Combining all points of A1, A2, A3
     A = np.concatenate((A1, A2, A3), axis=0)
-
-    # plotting the points
-    plt.scatter(A[:, 0], A[:, 1], s=0.5, c="red")
     return A
