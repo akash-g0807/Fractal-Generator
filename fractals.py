@@ -1,5 +1,8 @@
-import matplotlib.pyplot as plt
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+import math
 import importlib
 # Sierpinski Triangle using deterministic method usinf affine transformations
 # input the file name
@@ -18,7 +21,7 @@ if input_file == 1:
     file_name = "sierpinski_triangle"
 
 
-si_t = importlib.import_module(file_name)
+fractal = importlib.import_module(file_name)
 
 
 # input the number of iterations
@@ -26,10 +29,10 @@ n = int(input("Enter the number of iterations: "))
 
 # Iterating the contraction mapping function n times
 
-A = si_t.initial_triangle()
+A = fractal.initial_triangle()
 
 for i in range(n):
-    A = si_t.contraction_mapping(A)
+    A = fractal.contraction_mapping(A)
 
 print(A)
 
