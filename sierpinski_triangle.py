@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Initial triangle coordinates A of equilateral Triangle
-A = np.array([[0, 0], [0.5, math.sqrt(3) / 2], [1, 0]])
+A = np.array([[0.5, math.sqrt(3) / 2]])
 
 # initial array of all points that can be dynamically changed
 # of the triangle

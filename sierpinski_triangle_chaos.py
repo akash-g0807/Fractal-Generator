@@ -23,19 +23,19 @@ def initial_points():
 #
 def f1(x, y):
     x1 = x / 2
-    y1 = y / 2
+    y1 = y / 2 + (1/2)
     return x1, y1
 
 
 def f2(x, y):
-    x2 = (x + 1) / 2
+    x2 = (x / 2) + (1/2)
     y2 = y / 2
     return x2, y2
 
 
 def f3(x, y):
-    x3 = (x + 0.5) / 2
-    y3 = (y + math.sqrt(3) / 2) / 2
+    x3 = (x) / 2
+    y3 = -y / 2 + (1/2)
     return x3, y3
 
 
