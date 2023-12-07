@@ -13,7 +13,8 @@ print("1. Sierpinski Triangle")
 print("2. Barnsley Fern")
 print("3. Siepinski Triangle using chaos game")
 print("4. Barnsley Fern using chaos game")
-print("5. Koch Snowflake")
+print("5. Koch Curve")
+print("6. Koch Snowflake")
 print("------------------------------------")
 
 input_file = int(input("Enter the number: "))
@@ -27,6 +28,8 @@ if input_file == 3:
 if input_file == 4:
     file_name = "barnsley_fern_chaos"
 if input_file == 5:
+    file_name = "koch_curve"
+if input_file == 6:
     file_name = "koch_snowflake"
 
 
