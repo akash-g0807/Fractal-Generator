@@ -15,6 +15,7 @@ print("3. Siepinski Triangle using chaos game")
 print("4. Barnsley Fern using chaos game")
 print("5. Koch Curve")
 print("6. Koch Snowflake")
+print("7. Koch Snowflake using chaos game")
 print("------------------------------------")
 
 input_file = int(input("Enter the number: "))
@@ -31,6 +32,8 @@ if input_file == 5:
     file_name = "koch_curve"
 if input_file == 6:
     file_name = "koch_snowflake"
+if input_file == 7:
+    file_name = "koch_snowflake_chaos"
 
 
 fractal = importlib.import_module(file_name)
