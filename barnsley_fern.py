@@ -31,7 +31,9 @@ def f2(A):
     # make a copy of A
     A2 = A.copy()
     for i in range(len(A2)):
-        A2[i] = np.matmul(np.matrix([[0.85, 0.04], [-0.04, 0.85]]), A2[i]) + np.array([0, 1.6])
+        A2[i] = np.matmul(np.matrix([[0.85, 0.04], [-0.04, 0.85]]), A2[i]) + np.array(
+            [0, 1.6]
+        )
     return A2
 
 
@@ -39,7 +41,9 @@ def f3(A):
     # make a copy of A
     A3 = A.copy()
     for i in range(len(A3)):
-        A3[i] = np.matmul(np.matrix([[0.2, -0.26], [0.23, 0.22]]), A3[i]) + np.array([0, 1.6])
+        A3[i] = np.matmul(np.matrix([[0.2, -0.26], [0.23, 0.22]]), A3[i]) + np.array(
+            [0, 1.6]
+        )
     return A3
 
 
@@ -47,7 +51,9 @@ def f4(A):
     # make a copy of A
     A4 = A.copy()
     for i in range(len(A4)):
-        A4[i] = np.matmul(np.matrix([[-0.15, 0.28], [0.26, 0.24]]), A4[i]) + np.array([0, 0.44])
+        A4[i] = np.matmul(np.matrix([[-0.15, 0.28], [0.26, 0.24]]), A4[i]) + np.array(
+            [0, 0.44]
+        )
     return A4
 
 

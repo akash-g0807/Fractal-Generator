@@ -17,6 +17,9 @@ print("5. Koch Curve")
 print("6. Koch Snowflake")
 print("7. Koch Snowflake using chaos game")
 print("8. Koch Curve using chaos game")
+print(
+    "The diagrams are generated using the deterministic method and the chaos game method"
+)
 print("------------------------------------")
 
 input_file = int(input("Enter the number: "))
@@ -45,7 +48,7 @@ fractal = importlib.import_module(file_name)
 # input the number of iterations
 n = int(input("Enter the number of iterations: "))
 
-# Iterating the contraction mapping function n times
+# Iterating the contraction mapping/chaos game function n times
 
 ##### Derministic method #####
 # input file does not have the string chaos in it
